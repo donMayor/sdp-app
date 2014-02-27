@@ -1,0 +1,73 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SoundBoard.UserDashboard"
+    xmlns:data="clr-namespace:SoundBoard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="clr-namespace:SoundBoard.ViewModels"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False"
+    >
+
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="profile_pano" >
+            <StackPanel  Orientation="Vertical" VerticalAlignment="Center">
+                <Border
+                    BorderBrush="Goldenrod"
+                    BorderThickness="0.5"
+                    Width= "900"/>
+                <TextBlock Text="Mayowa" Foreground="Goldenrod" 
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+                <TextBlock Text="Segun" Foreground="White" 
+                           FontSize="25"
+                           Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Padding="2"                                
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                           HorizontalAlignment="Left" />
+            </StackPanel>
+        </DataTemplate>
+        </phone:PhoneApplicationPage.Resources>
+            <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Black">
+        <phone:Panorama >
+            <phone:Panorama.Title>
+                <TextBlock FontSize="120" Foreground="White" >SDP ACCOUNT</TextBlock>
+            </phone:Panorama.Title>
+            <!--Panorama item one-->
+            <phone:PanoramaItem>
+                <phone:PanoramaItem.Header>
+                    <TextBlock  Foreground="White" >Profile</TextBlock>
+                </phone:PanoramaItem.Header>
+                <Grid x:Name="profile" Margin="12, 0, 12, 12" >
+                    <ListBox  Name="big_datalist"          
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding Items}"
+                               ItemTemplate="{StaticResource profile_pano}">
+                    </ListBox>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!--Panorama item two-->
+            <phone:PanoramaItem >
+                <phone:PanoramaItem.Header>
+                    <TextBlock  Foreground="Goldenrod">Courses</TextBlock>
+                </phone:PanoramaItem.Header>
+                <Grid/>
+            </phone:PanoramaItem>
+        </phone:Panorama>
+    </Grid>
+
+</phone:PhoneApplicationPage>
