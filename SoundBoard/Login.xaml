@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="SoundBoard.Login"
+    x:Class="SDP.Login"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -12,9 +12,12 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"  d:DesignWidth="480" d:DesignHeight="768"
     shell:SystemTray.IsVisible="True">
-
+    <phone:PhoneApplicationPage.Resources>
+        <ImageBrush x:Key="imgKey" ImageSource="Assets/images/iqubesdp.png" />
+    </phone:PhoneApplicationPage.Resources>
+    <ScrollViewer>
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Black"  >
         
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -23,21 +26,22 @@
         </Grid.RowDefinitions>
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="Title" Grid.Row="0" >
-            <TextBlock  Text="Skill Development Platform" Margin="12,15,0,0" FontFamily="{StaticResource PhoneFontFamilyBold}" FontSize="22"  />
+            <TextBlock  Text="Skill Development Platform" Margin="12,15,0,0" FontFamily="{StaticResource PhoneFontFamilyBold}" Foreground="Goldenrod" FontSize="22"  />
         </StackPanel>
         <StackPanel x:Name="TitlePanel" Grid.Row="1" Margin="12,17,0,28">
-            <TextBlock x:Name="PageTitle" Text="LOGIN"  FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="50"/>
+            <TextBlock x:Name="PageTitle" Text="LOGIN"  FontFamily="{StaticResource PhoneFontFamilySemiBold}" Foreground="Goldenrod" FontSize="50"/>
         </StackPanel>
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
  
-            <TextBox Height="76" HorizontalAlignment="Left" Margin="10,95,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="422"  />
-            <TextBox Height="76" HorizontalAlignment="Left" Margin="10,254,0,0" Name="textBox2" Text="" VerticalAlignment="Top" Width="422" />
-            <Button Content="Sign in " Height="72" HorizontalAlignment="Left" Margin="251,361,0,0" Name="button1" VerticalAlignment="Top" Width="180" Click="Login_Event" Foreground="Goldenrod"/>
-            <Button Content="Create New Account !" Height="72" HorizontalAlignment="Left" Margin="33,489,0,0" Name="button2" VerticalAlignment="Top" Width="398" Click="Reg_Event" Foreground="Goldenrod"/>
+            <TextBox Height="76" HorizontalAlignment="Left" Margin="10,100,0,0" Name="textBox1" Background="White" VerticalAlignment="Top" Width="430"  />
+            <TextBox Height="76" HorizontalAlignment="Left" Margin="10,265,0,0" Name="textBox2" Text="" Background="White" VerticalAlignment="Top" Width="430" TextChanged="textBox2_TextChanged" />
+            <Button Content="Sign in " BorderThickness="0" Height="72" HorizontalAlignment="Left" Margin="251,395,0,0" Name="button1" VerticalAlignment="Top" Width="180" Click="Login_Event" Background="Goldenrod" Foreground="White"/>
+            <Button Content="New User? Create New Account!" BorderThickness="0" Height="72" HorizontalAlignment="Left" Margin="20,480,0,0" Name="button2" VerticalAlignment="Top" Width="420" Click="Reg_Event" Foreground="White" Background="Goldenrod"/>
+            <Button Content="Existing User? Register SDP Course!" BorderThickness="0" Height="72" HorizontalAlignment="Left" Margin="20,550,0,0" Name="register_course" VerticalAlignment="Top" Width="420" Click="Reg_Event" Foreground="White" Background="Goldenrod"/>
             <TextBlock Height="30" FontFamily="{StaticResource PhoneFontFamilyBold}" HorizontalAlignment="Left" Margin="20,75,0,0" Name="textBlock1" Text="Username" VerticalAlignment="Top"   FontSize="24" Foreground="Goldenrod"/>
             <TextBlock Height="30" FontFamily="{StaticResource PhoneFontFamilyBold}" HorizontalAlignment="Left" Margin="20,0,0,348" Name="textBlock2" Text="Password" VerticalAlignment="Bottom"    FontSize="24" Foreground="Goldenrod" />
         </Grid>
     </Grid>
-
+    </ScrollViewer>
 </phone:PhoneApplicationPage>

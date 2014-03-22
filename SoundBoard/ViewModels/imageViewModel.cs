@@ -1,11 +1,8 @@
-﻿using System;
+﻿using SDP.Service;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SoundBoard.Service;
 
-namespace SoundBoard.ViewModels
+namespace SDP.ViewModels
 {
  class imageViewModel
     {

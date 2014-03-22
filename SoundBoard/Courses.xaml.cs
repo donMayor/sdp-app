@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using Coding4Fun.Toolkit.Controls;
+using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
+using SDP.Resources;
+using SDP.ViewModels;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using SoundBoard.Resources;
-using SoundBoard.ViewModels;
-using Coding4Fun.Toolkit.Controls;
 
-namespace SoundBoard
+namespace SDP
 {
     public partial class Courses : PhoneApplicationPage
     {
@@ -105,7 +102,7 @@ namespace SoundBoard
 
         private void SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
- 
+            
         }
     }
 }

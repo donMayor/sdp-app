@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Navigation;
+﻿using Coding4Fun.Toolkit.Controls;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using SoundBoard.Resources;
-using SoundBoard.ViewModels;
-using Coding4Fun.Toolkit.Controls;
-using Quickteller.Sdk;
 using Microsoft.Phone.Tasks;
-namespace SoundBoard
+using SDP.Resources;
+using SDP.ViewModels;
+using System;
+using System.Windows.Controls;
+using System.Windows.Navigation;
+namespace SDP
 {
     public partial class MainPage : PhoneApplicationPage
     {
@@ -153,7 +148,8 @@ namespace SoundBoard
                 }
 
                 selector.SelectedItem = null;
-                NavigationService.Navigate(new Uri("/Courses.xaml?index="+selectedindex, UriKind.RelativeOrAbsolute));
+                if (!(selectedindex == 3 || selectedindex == 4 || selectedindex == 5 || selectedindex == 7 || selectedindex == 8 || selectedindex == 10 || selectedindex == 11 || selectedindex == 15 || selectedindex == 16 || selectedindex == 17 || selectedindex == 18))
+                NavigationService.Navigate(new Uri("/course_details.xaml", UriKind.RelativeOrAbsolute));
             }
 
             else if (data.Title == "Testimonials")
@@ -253,34 +249,40 @@ namespace SoundBoard
                 new ApplicationBarIconButton();
             recordAudioAppBar.IconUri = 
                 new Uri("/Assets/images/profile.png", UriKind.Relative);
-            recordAudioAppBar.Text = AppResources.AppBarRecord;
-
+            recordAudioAppBar.Text = "Login";
             recordAudioAppBar.Click += LoginClick;
 
             ApplicationBarMenuItem aboutAppBar =
                 new ApplicationBarMenuItem();
             aboutAppBar.Text = AppResources.AppBarAbout;
-
             aboutAppBar.Click += AboutClick;
+
 
             ApplicationBarIconButton helpAppBar =
                 new ApplicationBarIconButton();
             helpAppBar.IconUri =
                 new Uri("/Assets/images/help.png", UriKind.Relative);
-            helpAppBar.Text = AppResources.AppBarRecord;
+            helpAppBar.Text = "Help";
 
 
             ApplicationBarIconButton abtAppBar =
                 new ApplicationBarIconButton();
             abtAppBar.IconUri =
                 new Uri("/Assets/images/about.png", UriKind.Relative);
-            abtAppBar.Text = AppResources.AppBarRecord;
+            abtAppBar.Text ="About";
+            abtAppBar.Click += About_Click;
 
-            ApplicationBar.Buttons.Add(recordAudioAppBar);
+
             ApplicationBar.MenuItems.Add(aboutAppBar);
+            ApplicationBar.Buttons.Add(recordAudioAppBar);
             ApplicationBar.Buttons.Add(helpAppBar);
             ApplicationBar.Buttons.Add(abtAppBar);
 
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Mentor.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void AboutClick(object sender, EventArgs e)

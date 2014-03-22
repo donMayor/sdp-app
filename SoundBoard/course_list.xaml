@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SDP.course_list"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    
+    <phone:PhoneApplicationPage.Resources>
+
+
+        <DataTemplate x:Key="list" >
+            <StackPanel Orientation="Horizontal" Margin="5,5,5,5"  >
+                <Image Source="{Binding imageUri}" Width="50" Height="50"  Margin="0,10,8,0" />
+                <StackPanel Width="380" VerticalAlignment="Center">
+
+                    <TextBlock Text="{Binding coursename}" />
+
+
+                </StackPanel>
+
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock  Text="Skill Development Platform" Margin="12,15,0,0" FontFamily="{StaticResource PhoneFontFamilyBold}" Foreground="Goldenrod" FontSize="22"  />
+           
+        </StackPanel>
+        <Grid Grid.Row="1" Margin="0,0,0,5" Background="Goldenrod" Height="40">
+            <TextBlock  Text="Select Course(s) to Add" VerticalAlignment="Center" Margin="12,0,0,0" FontFamily="{StaticResource PhoneFontFamilyBold}" Foreground="White" FontSize="22"  />
+        </Grid>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
+            <ListBox x:Name="cour" 
+                         Margin="40,0,0,0"  
+                         HorizontalAlignment="Left" 
+                         SelectionMode="Multiple"   
+                         FontSize="28"  
+                         Padding="2"                                
+                         SelectionChanged="cour_SelectionChanged"
+                         ItemsSource="{Binding datacollection}"
+                         ItemTemplate="{StaticResource list}">
+            </ListBox>
+            
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

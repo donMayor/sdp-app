@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SoundBoard.ViewModels
+namespace SDP.ViewModels
 {
   public class SoundModel
     {
@@ -140,19 +137,19 @@ namespace SoundBoard.ViewModels
                 }
                 else if (i == 21)
                 {
-                    label = "Francis";
+                    label = "Mayowa";
                 }
                 else if (i == 22)
                 {
-                    label = "Mayowa";
+                    label = "Emeka";
                 }
                 else if (i == 23)
                 {
-                    label = "Emeka";
+                    label = "Francis";
                 }
                 else if (i == 24)
                 {
-                    label = "Tope";
+                    label = "Tomiwa";
                 }
                 else if (i == 25)
                 {

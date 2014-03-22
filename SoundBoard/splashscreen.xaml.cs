@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using System.Windows.Controls.Primitives;
+﻿using Microsoft.Phone.Controls;
+using System;
 using System.ComponentModel;
 using System.Threading;
+using System.Windows.Controls.Primitives;
+using System.Windows.Navigation;
 
-namespace SoundBoard
+namespace SDP
 {
     public partial class splashscreen : PhoneApplicationPage
     {
@@ -39,7 +33,7 @@ namespace SoundBoard
         {
             this.Dispatcher.BeginInvoke(() =>
             {
-                NavigationService.Navigate(new Uri("/MainPage.xaml?index=", UriKind.RelativeOrAbsolute));
+                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.RelativeOrAbsolute));
             });
         }
 

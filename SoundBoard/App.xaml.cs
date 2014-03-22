@@ -1,15 +1,13 @@
-﻿using System;
+﻿using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
+using SDP.Resources;
+using System;
 using System.Diagnostics;
-using System.Resources;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using SoundBoard.Resources;
-using SoundBoard.ViewModels;
 
-namespace SoundBoard
+namespace SDP
 {
     public partial class App : Application
     {
@@ -45,6 +43,7 @@ namespace SoundBoard
 
             // Standard XAML initialization
             InitializeComponent();
+         
 
             // Phone-specific initialization
             InitializePhoneApplication();

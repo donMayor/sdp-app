@@ -1,11 +1,14 @@
-﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SoundBoard" EntryPointType="SoundBoard.App" RuntimeVersion="4.7.50308.0">
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SDP" EntryPointType="SDP.App" RuntimeVersion="4.7.50308.0">
   <Deployment.Parts>
-    <AssemblyPart x:Name="SoundBoard" Source="SoundBoard.dll" />
+    <AssemblyPart x:Name="SDP" Source="SDP.dll" />
     <AssemblyPart x:Name="Coding4Fun.Toolkit.Audio" Source="Coding4Fun.Toolkit.Audio.dll" />
     <AssemblyPart x:Name="Coding4Fun.Toolkit.Controls" Source="Coding4Fun.Toolkit.Controls.dll" />
     <AssemblyPart x:Name="Coding4Fun.Toolkit.Net" Source="Coding4Fun.Toolkit.Net.dll" />
     <AssemblyPart x:Name="Coding4Fun.Toolkit.Storage" Source="Coding4Fun.Toolkit.Storage.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="MyToolkit" Source="MyToolkit.dll" />
+    <AssemblyPart x:Name="MyToolkit.Extended" Source="MyToolkit.Extended.dll" />
     <AssemblyPart x:Name="Newtonsoft.Json" Source="Newtonsoft.Json.dll" />
     <AssemblyPart x:Name="Quickteller.Sdk.Wp8" Source="Quickteller.Sdk.Wp8.dll" />
     <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />

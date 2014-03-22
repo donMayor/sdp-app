@@ -1,6 +1,6 @@
-﻿using SoundBoard.Resources;
+﻿using SDP.Resources;
 
-namespace SoundBoard
+namespace SDP
 {
     /// <summary>
     /// Provides access to string resources.

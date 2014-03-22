@@ -1,0 +1,144 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SDP.course_details"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="list" >
+            <StackPanel Orientation="Horizontal" Margin="5,5,5,5"  >
+                <Image Source="{Binding imageUri}" Width="50" Height="50"  Margin="0,10,8,0" />
+                <StackPanel Width="380" VerticalAlignment="Center">
+                    <TextBlock Text="{Binding coursename}" Foreground="White" 
+                               FontSize="28"  
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+
+                </StackPanel>
+                
+            </StackPanel>
+
+        </DataTemplate>
+        
+        <DataTemplate x:Key="about">
+            <Grid   Background="Transparent" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <!--<RowDefinition Height="Auto"/>-->
+
+                </Grid.RowDefinitions>
+                <!--TitlePanel contains the name of the application and page title-->
+               
+                <Grid x:Name="details" Grid.Row="0"  >
+
+                    <TextBlock TextWrapping="Wrap" 
+                               Text="{Binding desc}"
+                               Margin="0, 0, 0,12" 
+                               FontFamily="{StaticResource PhoneFontFamilyBold}" 
+                               FontSize="20" >
+                            
+                    </TextBlock>
+                   
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Button Content="Register" BorderThickness="0" Margin="0,10, 0,0" Width="450" Height="80" Foreground="White" Background="Goldenrod"></Button>
+                </Grid>
+               
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="course" >
+            <StackPanel  Orientation="Vertical" VerticalAlignment="Center">
+
+                <TextBlock Text="{Binding Week}" Foreground="Goldenrod" 
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+                <TextBlock Text="{Binding WeekContent}" Foreground="White" 
+                           FontSize="25"
+                           Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Padding="2"                                
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                           HorizontalAlignment="Left" />
+                <Border
+                    BorderBrush="Goldenrod"
+                    BorderThickness="0.5"
+                    Width= "900"/>
+            </StackPanel>
+        </DataTemplate>
+
+    </phone:PhoneApplicationPage.Resources>
+    
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+
+        <phone:Pivot  Title="Skill Development Platform">
+            
+            <!--Pivot item one-->
+                <phone:PivotItem Header="About">
+                    <Grid Margin="20, 10, 20, 20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                    
+                    <Grid x:Name="video" Grid.Row="0" Margin="0,0, 0, 12" Background="Gray" >
+                        
+                        <MediaElement  Height="200" HorizontalAlignment="Left" Margin="0,0,0,0" Name="mediaElement1" VerticalAlignment="Top"  Volume="100" />
+                        <Image Source="Assets/images/play.png" Height="90" HorizontalAlignment="Center" Name="youtube_play" VerticalAlignment="Center" Width="160" Tap="play_pause"/>
+                       
+                        <ProgressBar x:Name="customIndeterminateProgressBar" Visibility="Collapsed" IsIndeterminate="False" Style="{StaticResource CustomIndeterminateProgressBar}"/>
+                    </Grid>
+                        <phone:LongListSelector Grid.Row="1"
+                            Name="course_desc"
+                            ItemsSource="{Binding about_model}"
+                            ItemTemplate="{StaticResource about}" SelectionChanged="course_desc_SelectionChanged">
+                            
+                        </phone:LongListSelector>
+                   
+                </Grid>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+           
+            <phone:PivotItem Header="Syllabus">
+                <Grid x:Name="syllabus" Margin="12, 0, 12, 12" >
+
+                    <ListBox  Name="course_syllabus"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding coursecontent}"
+                               ItemTemplate="{StaticResource course}">
+                    </ListBox>
+                </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Related">
+                    <Grid >
+                        <ListBox  
+                        Name="relatedcourse" 
+                        HorizontalAlignment="Left"
+                        ItemsSource="{Binding relatedcourse}" 
+                        ItemTemplate="{StaticResource list}">
+                            
+                        </ListBox>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+   
+</phone:PhoneApplicationPage>

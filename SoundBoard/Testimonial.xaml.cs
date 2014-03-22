@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Navigation;
+﻿using Coding4Fun.Toolkit.Controls;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using SoundBoard.Resources;
-using SoundBoard.ViewModels;
-using Coding4Fun.Toolkit.Controls;
+using SDP.Resources;
+using SDP.ViewModels;
+using System;
+using System.Windows.Controls;
+using System.Windows.Navigation;
 
 
-namespace SoundBoard
+namespace SDP
 {
     public partial class Testimonial : PhoneApplicationPage
     {

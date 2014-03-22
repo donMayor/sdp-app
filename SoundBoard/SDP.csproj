@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SoundBoard</RootNamespace>
-    <AssemblyName>SoundBoard</AssemblyName>
+    <RootNamespace>SDP</RootNamespace>
+    <AssemblyName>SDP</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
@@ -19,9 +19,9 @@
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>SoundBoard_$(Configuration)_$(Platform).xap</XapFilename>
+    <XapFilename>SDP_Debug_AnyCPU.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
-    <SilverlightAppEntry>SoundBoard.App</SilverlightAppEntry>
+    <SilverlightAppEntry>SDP.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
@@ -96,6 +96,9 @@
     <Compile Include="Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
     </Compile>
+    <Compile Include="course_list.xaml.cs">
+      <DependentUpon>course_list.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -112,12 +115,17 @@
     <Compile Include="PaymentSuccessful.xaml.cs">
       <DependentUpon>PaymentSuccessful.xaml</DependentUpon>
     </Compile>
+    <Compile Include="course_details.xaml.cs">
+      <DependentUpon>course_details.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Product.xaml.cs">
       <DependentUpon>Product.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelativeAnimatingContentControl.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -134,6 +142,7 @@
     <Compile Include="UserDashboard.xaml.cs">
       <DependentUpon>UserDashboard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\aboutmodel.cs" />
     <Compile Include="ViewModels\HowWeCoach.cs" />
     <Compile Include="ViewModels\HowWeCoachModel.cs" />
     <Compile Include="ViewModels\imageViewModel.cs" />
@@ -153,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="Courses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="course_list.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,15 +189,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="course_details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Product.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Register.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SampleData\SampleData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -203,9 +216,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Assets\WMAppManifest.xml">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
@@ -214,6 +224,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\face.mp3" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png" />
     <Content Include="Assets\images\1.jpg" />
@@ -250,16 +261,35 @@
     <Content Include="Assets\images\8.jpg" />
     <Content Include="Assets\images\9.jpg" />
     <Content Include="Assets\images\about.png" />
+    <Content Include="Assets\images\emeka.jpg" />
+    <Content Include="Assets\images\enroll.jpg" />
+    <Content Include="Assets\images\enroll.png" />
+    <Content Include="Assets\images\famisa.jpg" />
+    <Content Include="Assets\images\francis.jpg" />
     <Content Include="Assets\images\help.png" />
+    <Content Include="Assets\images\iqubesdp.png" />
+    <Content Include="Assets\images\pause.png" />
     <Content Include="Assets\images\profile.png" />
+    <Content Include="Assets\images\play.png" />
+    <Content Include="Assets\images\rotimi.jpg" />
+    <Content Include="Assets\images\Samuel.jpg" />
+    <Content Include="Assets\images\wale.jpg" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png" />
     <Content Include="Assets\Tiles\FlipCycleTileMedium.png" />
     <Content Include="Assets\Tiles\FlipCycleTileSmall.png" />
     <Content Include="Assets\Tiles\IconicTileMediumLarge.png" />
     <Content Include="Assets\Tiles\IconicTileSmall.png" />
+    <Content Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Properties\WMAppManifest.xml" />
     <Content Include="ReadMe.Coding4Fun.Toolkit.txt" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Coding4Fun.Toolkit.Audio">
@@ -275,6 +305,15 @@
       <HintPath>..\packages\Coding4Fun.Toolkit.Storage.2.0.6\lib\windowsphone8\Coding4Fun.Toolkit.Storage.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MyToolkit">
+      <HintPath>..\packages\MyToolkit.2.1.2.0\lib\portable-win+net40+sl40+wp71\MyToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MyToolkit.Extended">
+      <HintPath>..\packages\MyToolkit.Extended.2.1.2.0\lib\wp80\MyToolkit.Extended.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -298,7 +337,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <Folder Include="SampleData\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

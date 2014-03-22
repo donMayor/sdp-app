@@ -38,3 +38,140 @@ C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SoundBoard\SoundBoard\o
 C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SoundBoard\SoundBoard\obj\Debug\SoundBoard.pdb
 C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SoundBoard\SoundBoard\obj\Debug\XapCacheFile.xml
 C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SoundBoard\SoundBoard\obj\Debug\UserDashboard.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\SoundBoard.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\SoundBoard.pdb
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\AppManifest.xaml
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\SoundBoard_Debug_AnyCPU.xap
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Audio.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Net.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Storage.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Quickteller.Sdk.Wp8.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\System.Net.Http.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\WP8BouncyCastle.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\System.Net.Http.xml
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\Bin\Debug\WP8BouncyCastle.pdb
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\SDP.csprojResolveAssemblyReference.cache
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\App.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\Courses.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\Login.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\MainPage.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\Mentor.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\PaymentFailed.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\PaymentSuccessful.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\Product.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\Register.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\splashscreen.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\Testimonial.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\UserDashboard.g.cs
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\SoundBoard.g.resources
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\SoundBoard.Resources.AppResources.resources
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\SDP.csproj.GenerateResource.Cache
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\SoundBoard.dll
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\SoundBoard.pdb
+C:\Users\don_mayor\Documents\Visual_Studio_2013\Projects\SoundBoard\SoundBoard\obj\Debug\XapCacheFile.xml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\SDP.csprojResolveAssemblyReference.cache
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\App.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\Courses.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\Login.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\MainPage.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\Mentor.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\PaymentFailed.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\PaymentSuccessful.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\Product.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\Register.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\splashscreen.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\Testimonial.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\UserDashboard.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\SDP.g.resources
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\SDP.Resources.AppResources.resources
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\SDP.csproj.GenerateResource.Cache
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\SDP.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\SDP.pdb
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\AppManifest.xaml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\SDP_Debug_AnyCPU.xap
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Audio.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Net.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Coding4Fun.Toolkit.Storage.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Quickteller.Sdk.Wp8.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\System.Net.Http.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\WP8BouncyCastle.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\System.Net.Http.xml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\WP8BouncyCastle.pdb
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\SDP.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\SDP.pdb
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\XapCacheFile.xml
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\course_details.g.cs
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\MyToolkit.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\MyToolkit.Extended.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\de\MyToolkit.Extended.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\Bin\Debug\fr\MyToolkit.Extended.resources.dll
+C:\Users\don_mayor\Documents\Visual Studio 2013\Projects\SDP\SoundBoard\obj\Debug\course_list.g.cs
