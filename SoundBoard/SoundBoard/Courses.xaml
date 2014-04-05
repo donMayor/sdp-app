@@ -1,0 +1,245 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SoundBoard.Courses"
+    xmlns:data="clr-namespace:SoundBoard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:ViewModels="clr-namespace:SoundBoard.ViewModels"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="course" >
+            <StackPanel  Orientation="Vertical" VerticalAlignment="Center">
+              
+                <TextBlock Text="{Binding Week}" Foreground="Goldenrod" 
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+                <TextBlock Text="{Binding WeekContent}" Foreground="White" 
+                           FontSize="25"
+                           Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Padding="2"                                
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                           HorizontalAlignment="Left" />
+                <Border
+                    BorderBrush="Goldenrod"
+                    BorderThickness="0.5"
+                    Width= "900"/>
+            </StackPanel>
+        </DataTemplate>
+       
+    </phone:PhoneApplicationPage.Resources>
+    
+    <ScrollViewer>
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid x:Name="LayoutRoot" Background="Transparent" >
+            <!--Pivot Control-->
+            <phone:Pivot  x:Name="courses" SelectionChanged="SelectionChanged">
+                <phone:Pivot.Title>
+                    <TextBlock FontFamily="{StaticResource PhoneFontFamilyBold}" FontSize="22">Skill Development Platform</TextBlock>
+                </phone:Pivot.Title>
+                <phone:PivotItem Header="Big Data" >
+                    <Grid x:Name="Big_data" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="big_datalist"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding bigdataItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Python"  >
+                    <Grid x:Name="python" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="python_list"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding pythonItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="linux Admistration">
+                    <Grid x:Name="linux_admistration" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="linuxadmistration"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding linuxAdmItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Machine Learning">
+                    <Grid x:Name="machine_learning" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="machinelearning"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding MachineItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Image Processing">
+                    <Grid x:Name="imageprocessing" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="imagepro"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding imageItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="GSM Architecture">
+                    <Grid x:Name="gsm_archi" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="gsmarchi"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding gsmItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Java">
+                    <Grid x:Name="java" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_java"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding javaItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="C#">
+                    <Grid x:Name="csharp" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_csharp"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding csharpItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="C++">
+                    <Grid x:Name="cplus" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_cplus"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding cplusItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Bash">
+                    <Grid x:Name="bash" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_bash"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding bashItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="MySQL">
+                    <Grid x:Name="mysql" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_mysql"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding mysqlItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Artificial Intelligence">
+                    <Grid x:Name="ai" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_ai"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding aiItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="JavaScript">
+                    <Grid x:Name="js" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_js"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding jsItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Perl">
+                    <Grid x:Name="perl" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_perl"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding perlItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="php">
+                    <Grid x:Name="php" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_php"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding phpItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Linux Programming">
+                    <Grid x:Name="linuxprogramming" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_linuxprogramming"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding linuxnetItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Web Architecture">
+                    <Grid x:Name="webarchitecture" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_webarchitecture"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding webItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Cloud Computing">
+                        <Grid x:Name="cloud" Margin="12, 0, 12, 12" >
+
+                            <ListBox  Name="_cloud"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding cloudItems}"
+                               ItemTemplate="{StaticResource course}">
+                            </ListBox>
+                        </Grid>
+                    </phone:PivotItem>
+                <phone:PivotItem Header="Database Admistration">
+                    <Grid x:Name="database" Margin="12, 0, 12, 12" >
+
+                        <ListBox  Name="_database"  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding dataItems}"
+                               ItemTemplate="{StaticResource course}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+            </phone:Pivot>
+        </Grid>
+    </ScrollViewer>
+</phone:PhoneApplicationPage>

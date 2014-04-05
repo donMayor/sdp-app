@@ -1,0 +1,167 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SoundBoard.Testimonial"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:data="clr-namespace:SoundBoard"
+    xmlns:ViewModels="clr-namespace:SoundBoard.ViewModels"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="testimonial" >
+            <StackPanel  Orientation="Vertical" VerticalAlignment="Center">
+
+                <TextBlock Text="Name" Foreground="Goldenrod" 
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+                <TextBlock Text="{Binding name}" Foreground="White" 
+                           FontSize="25"
+                           Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Padding="2"                                
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                           HorizontalAlignment="Left" />
+                <Border
+                    BorderBrush="Goldenrod"
+                    BorderThickness="0.5"
+                    Width= "900"/>
+                <TextBlock Text="Institution" Foreground="Goldenrod" 
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+                <TextBlock Text="{Binding institution}" Foreground="White" 
+                           FontSize="25"
+                           Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Padding="2"                                
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                           HorizontalAlignment="Left" />
+                <Border
+                    BorderBrush="Goldenrod"
+                    BorderThickness="0.5"
+                    Width= "900"/>
+                <TextBlock Text="Profession" Foreground="Goldenrod" 
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+                <TextBlock Text="{Binding profession}" Foreground="White" 
+                           FontSize="25"
+                           Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Padding="2"                                
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                           HorizontalAlignment="Left" />
+                <Border
+                    BorderBrush="Goldenrod"
+                    BorderThickness="0.5"
+                    Width= "900"/>
+                <TextBlock Text="Testimony" Foreground="Goldenrod" 
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Padding="2"                                
+                               FontFamily="{StaticResource PhoneFontFamilyBold}"
+                               HorizontalAlignment="Left" />
+                <TextBlock Text="{Binding testimony}" Foreground="White" 
+                           FontSize="25"
+                           Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Padding="2"                                
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                           HorizontalAlignment="Left" />
+                <Border
+                    BorderBrush="Goldenrod"
+                    BorderThickness="0.5"
+                    Width= "900"/>
+            </StackPanel>
+        </DataTemplate>
+
+    </phone:PhoneApplicationPage.Resources>
+
+    <ScrollViewer>
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid x:Name="LayoutRoot" Background="Transparent" >
+            <!--Pivot Control-->
+            <phone:Pivot  x:Name="testimonials" SelectionChanged="SelectionChanged">
+                <phone:Pivot.Title>
+                    <TextBlock FontFamily="{StaticResource PhoneFontFamilyBold}" FontSize="22">Skill Development Platform</TextBlock>
+                </phone:Pivot.Title>
+                <phone:PivotItem Header="Detan" >
+                    <Grid x:Name="detan" Margin="12, 0, 12, 12" >
+
+                        <ListBox  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding first}"
+                               ItemTemplate="{StaticResource testimonial}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Mayowa" >
+                    <Grid x:Name="mayowa" Margin="12, 0, 12, 12" >
+
+                        <ListBox  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding second}"
+                               ItemTemplate="{StaticResource testimonial}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Emeka" >
+                    <Grid x:Name="emeka" Margin="12, 0, 12, 12" >
+
+                        <ListBox  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding third}"
+                               ItemTemplate="{StaticResource testimonial}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Francis" >
+                    <Grid x:Name="francis" Margin="12, 0, 12, 12" >
+
+                        <ListBox  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding fourth}"
+                               ItemTemplate="{StaticResource testimonial}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Tomiwa" >
+                    <Grid x:Name="tomiwa" Margin="12, 0, 12, 12" >
+
+                        <ListBox  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding fifth}"
+                               ItemTemplate="{StaticResource testimonial}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+                <phone:PivotItem Header="Wale" >
+                    <Grid x:Name="wale" Margin="12, 0, 12, 12" >
+
+                        <ListBox  
+                               HorizontalAlignment="Left"                               
+                               ItemsSource="{Binding sixth}"
+                               ItemTemplate="{StaticResource testimonial}">
+                        </ListBox>
+                    </Grid>
+                </phone:PivotItem>
+               
+            </phone:Pivot>
+        </Grid>
+    </ScrollViewer>
+</phone:PhoneApplicationPage>
