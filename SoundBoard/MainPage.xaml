@@ -129,7 +129,7 @@
                     GridCellSize="215,215"
                     IsGroupingEnabled="True"
                     />
-                    <Button Content="Register" Width="200" HorizontalAlignment="Right" Margin="0,0,15,0" VerticalAlignment="Top" Background="Goldenrod" Foreground="White" BorderThickness="0"/>
+                    <Button Content="Register" Width="227" HorizontalAlignment="Right" Margin="0,0,15,0" VerticalAlignment="Top" Background="Goldenrod" Foreground="White" BorderThickness="0" Click="Register_click"/>
                 </Grid>
             </phone:PivotItem>
 

@@ -11,6 +11,7 @@ namespace SDP
         {
            
             InitializeComponent();
+            MainPage.is_NewInstance = true;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

@@ -13,6 +13,7 @@ namespace SDP
     {
         public Image src = null;
         public static int selectedindex = -1;
+        public static bool is_NewInstance = true;
         public static int header = -1;
         public int index = -1;
         // Constructor
@@ -325,6 +326,11 @@ namespace SDP
         {
             Console.WriteLine(e.Message);
         }
+    }
+
+    private void Register_click(object sender, System.Windows.RoutedEventArgs e)
+    {
+        NavigationService.Navigate(new Uri("/Register.xaml", UriKind.RelativeOrAbsolute));
     }
     
 

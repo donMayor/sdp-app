@@ -52,7 +52,7 @@
                    
                 </Grid>
                 <Grid Grid.Row="1">
-                    <Button Content="Register" BorderThickness="0" Margin="0,10, 0,0" Width="450" Height="80" Foreground="White" Background="Goldenrod"></Button>
+                    <Button Content="Register" BorderThickness="0" Margin="0,10, 0,0" Width="450" Height="80" Foreground="White" Background="Goldenrod" Click="Register_Course"></Button>
                 </Grid>
                
             </Grid>
@@ -80,6 +80,7 @@
                     Width= "900"/>
             </StackPanel>
         </DataTemplate>
+       
 
     </phone:PhoneApplicationPage.Resources>
     
@@ -98,11 +99,12 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                     
-                    <Grid x:Name="video" Grid.Row="0" Margin="0,0, 0, 12" Background="Gray" >
-                        
-                        <MediaElement  Height="200" HorizontalAlignment="Left" Margin="0,0,0,0" Name="mediaElement1" VerticalAlignment="Top"  Volume="100" />
-                        <Image Source="Assets/images/play.png" Height="90" HorizontalAlignment="Center" Name="youtube_play" VerticalAlignment="Center" Width="160" Tap="play_pause"/>
-                       
+                    <Grid x:Name="video" Grid.Row="0" Margin="0,0, 0, 12" Tap="youtube_play_Tap">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/images/youtube.jpg"></ImageBrush>
+                        </Grid.Background>
+
+                        <MediaElement Height="Auto" Width="Auto" HorizontalAlignment="Left" Margin="0,0,0,0" Name="youtube_play" VerticalAlignment="Top"  Volume="100" />
                         <ProgressBar x:Name="customIndeterminateProgressBar" Visibility="Collapsed" IsIndeterminate="False" Style="{StaticResource CustomIndeterminateProgressBar}"/>
                     </Grid>
                         <phone:LongListSelector Grid.Row="1"

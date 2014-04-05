@@ -216,6 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="SDP_2014_03_22_23_46_36.sap" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
@@ -224,9 +225,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\face.mp3" />
     <Content Include="Assets\AlignmentGrid.png" />
-    <Content Include="Assets\ApplicationIcon.png" />
     <Content Include="Assets\images\1.jpg" />
     <Content Include="Assets\images\10.jpg" />
     <Content Include="Assets\images\11.jpg" />
@@ -245,10 +244,6 @@
     <Content Include="Assets\images\23.jpg" />
     <Content Include="Assets\images\24.jpg" />
     <Content Include="Assets\images\25.jpg" />
-    <Content Include="Assets\images\26.jpg" />
-    <Content Include="Assets\images\27.jpg" />
-    <Content Include="Assets\images\28.jpg" />
-    <Content Include="Assets\images\29.jpg" />
     <Content Include="Assets\images\3.jpg" />
     <Content Include="Assets\images\30.jpg" />
     <Content Include="Assets\images\31.jpg" />
@@ -260,25 +255,10 @@
     <Content Include="Assets\images\7.jpg" />
     <Content Include="Assets\images\8.jpg" />
     <Content Include="Assets\images\9.jpg" />
-    <Content Include="Assets\images\about.png" />
-    <Content Include="Assets\images\emeka.jpg" />
-    <Content Include="Assets\images\enroll.jpg" />
-    <Content Include="Assets\images\enroll.png" />
-    <Content Include="Assets\images\famisa.jpg" />
-    <Content Include="Assets\images\francis.jpg" />
     <Content Include="Assets\images\help.png" />
     <Content Include="Assets\images\iqubesdp.png" />
-    <Content Include="Assets\images\pause.png" />
     <Content Include="Assets\images\profile.png" />
-    <Content Include="Assets\images\play.png" />
-    <Content Include="Assets\images\rotimi.jpg" />
-    <Content Include="Assets\images\Samuel.jpg" />
-    <Content Include="Assets\images\wale.jpg" />
-    <Content Include="Assets\Tiles\FlipCycleTileLarge.png" />
-    <Content Include="Assets\Tiles\FlipCycleTileMedium.png" />
-    <Content Include="Assets\Tiles\FlipCycleTileSmall.png" />
-    <Content Include="Assets\Tiles\IconicTileMediumLarge.png" />
-    <Content Include="Assets\Tiles\IconicTileSmall.png" />
+    <Content Include="Assets\images\youtube.jpg" />
     <Content Include="Properties\AppManifest.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -337,6 +317,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\Tiles\" />
     <Folder Include="SampleData\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
